@@ -1,8 +1,32 @@
-# An example of a submission to Bot Bowl I
-Package dependencies must be specified in setup.py and the bot script must register the bot with a name.
+# Submission Template for Bot Bowl II
 
-Read more about the rules on https://bot-bowl.com/rules-and-software/.
+Before submitting, you should have read the [rules](https://njustesen.github.io/ffai/bot-bowl-ii) of Bot Bowl II.
 
-In case of any other install dependencies, please specify them here. 
+## Dependencies
+Specify all dependencies in requirements.py. 
+The competition organizers will create a conda environment with python 3.7 and install the dependencies like this:
 
-You can test your bot repository by installing it using "pip install -e ." in the directory and then run a modified version of https://github.com/njustesen/ffai/blob/master/examples/competition_example.py where you run a competition using your bot name in the make_bot call. Remember to import you package, e.g. "import simplebot".
+```
+conda create --name bot python=3.7
+pip install -r requirements
+```
+
+## Run your bot
+Make sure your bot will run by calling:
+
+```
+python run.py --agent <bot-name> --token 1234 --port 6000
+```
+where ```<bot-name>``` is the name you have used to register your bot.
+
+## Test in a Competition
+You can test your bot by running it in two different processes (open another terminal window and run the above command again but with a different port). Then specify the tokens and ports of the two bots in competition.yaml.
+Then run the competition server (in another process):
+
+```
+python competition.py --config competition.yaml  
+```
+
+## Docker
+
+We will soon provide a Dockerfile that will run the sample bot in a docker container. You are also welcome to use your own docker file.
