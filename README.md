@@ -29,4 +29,4 @@ python competition.py --config competition.yaml
 
 ## Docker
 
-We will soon provide a Dockerfile that will run the sample bot in a docker container. You are also welcome to use your own docker file.
+We may provide a Dockerfile at some point that will run the sample bot in a docker container. You are also welcome to use your own docker file as long as this README.txt describe how to run your bot.
