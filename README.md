@@ -11,6 +11,8 @@ conda create --name bot python=3.7
 pip install -r requirements
 ```
 
+Please specify in your README.txt if you have additional installation instructions.
+
 ## Run your bot
 Make sure your bot will run by calling:
 
@@ -26,7 +28,3 @@ Then run the competition server (in another process):
 ```
 python competition.py --config competition.yaml  
 ```
-
-## Docker
-
-We may provide a Dockerfile at some point that will run the sample bot in a docker container. You are also welcome to use your own docker file as long as this README.txt describe how to run your bot.
