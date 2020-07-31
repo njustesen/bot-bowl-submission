@@ -8,7 +8,7 @@ The competition organizers will create a conda environment with python 3.7 and i
 
 ```
 conda create --name bot python=3.7
-pip install -r requirements
+pip install -r requirements.txt
 ```
 
 Please specify in your README.txt if you have additional installation instructions.
