@@ -1,13 +1,13 @@
-# Submission Template for Bot Bowl II
+# Submission Template for Bot Bowl
 
 Before submitting, you should have read the [rules](https://njustesen.github.io/ffai/bot-bowl-ii) of Bot Bowl II.
 
 ## Dependencies
 Specify all dependencies in requirements.py. 
-The competition organizers will create a conda environment with python 3.7 and install the dependencies like this:
+The competition organizers will create a conda environment with python 3.8 and install the dependencies like this:
 
 ```
-conda create --name bot python=3.7
+conda create --name bot python=3.8
 pip install -r requirements.txt
 ```
 
