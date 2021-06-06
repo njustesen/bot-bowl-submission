@@ -8,6 +8,7 @@ The competition organizers will create a conda environment with python 3.8 and i
 
 ```
 conda create --name bot python=3.8
+conda activate bot
 pip install -r requirements.txt
 ```
 
