@@ -1,6 +1,6 @@
 # Submission Template for Bot Bowl
 
-Before submitting, you should have read the competition [rules](https://njustesen.github.io/ffai/bot-bowl-iii) of Bot Bowl III.
+Before submitting, you should have read the competition [rules](https://njustesen.github.io/ffai/bot-bowl-iv) of Bot Bowl IV.
 
 ## Dependencies
 The competition organizers will create a conda environment with python 3.8 and install the dependencies like this:
@@ -32,4 +32,4 @@ When the two bots are loaded and are waiting for a game to start, run the compet
 python competition.py --config competition.yaml  
 ```
 
-When the competition is over, you should see the resutls printed in your terminal.
+When the competition is over, you should see the results printed in your terminal.

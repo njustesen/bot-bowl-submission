@@ -11,4 +11,4 @@ competitor-b:
   port: 6000
   token: '1234'
 num_games: 10
-config: bot-bowl-iii
+config: bot-bowl

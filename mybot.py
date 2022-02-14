@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 
-import ffai
+import botbowl
 import numpy as np
 
 
-class MyRandomBot(ffai.Agent):
+class MyRandomBot(botbowl.Agent):
 
     def __init__(self, name, seed=None):
         super().__init__(name)
@@ -19,7 +19,7 @@ class MyRandomBot(ffai.Agent):
         while True:
             action_choice = self.rnd.choice(game.state.available_actions)
             # Ignore PLACE_PLAYER actions
-            if action_choice.action_type != ffai.ActionType.PLACE_PLAYER:
+            if action_choice.action_type != botbowl.ActionType.PLACE_PLAYER:
                 break
 
         # Select a random position and/or player
@@ -27,7 +27,7 @@ class MyRandomBot(ffai.Agent):
         player = self.rnd.choice(action_choice.players) if len(action_choice.players) > 0 else None
 
         # Make action object
-        action = ffai.Action(action_choice.action_type, position=position, player=player)
+        action = botbowl.Action(action_choice.action_type, position=position, player=player)
 
         # Return action to the framework
         return action
@@ -37,4 +37,4 @@ class MyRandomBot(ffai.Agent):
 
 
 # Register the bot to the framework
-ffai.register_bot('my-random-bot', MyRandomBot)
+botbowl.register_bot('my-random-bot', MyRandomBot)

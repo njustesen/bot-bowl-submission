@@ -1,4 +1,4 @@
-import ffai
+import botbowl
 import mybot
 import argparse
 
@@ -8,6 +8,6 @@ parser.add_argument('--token', help='Secret communication token', required=True)
 parser.add_argument('--port', help='Port to listen on', type=int, default=5000)
 args = parser.parse_args()
 
-agent = ffai.make_bot(args.agent)
-server = ffai.ai.PythonSocketServer(agent, args.port, args.token)
+agent = botbowl.make_bot(args.agent)
+server = botbowl.ai.PythonSocketServer(agent, args.port, args.token)
 server.run()
